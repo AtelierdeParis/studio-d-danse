@@ -33,6 +33,10 @@ const Layout = (props: props) => {
     return <AccountLayout>{props.children}</AccountLayout>
   }
 
+  if (router.pathname === '/maintenance') {
+    return <>{props.children}</>
+  }
+
   return (
     <Flex
       minH="100vh"
